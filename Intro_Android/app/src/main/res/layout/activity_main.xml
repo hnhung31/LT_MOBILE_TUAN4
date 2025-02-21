@@ -1,0 +1,79 @@
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Hàng 1: Chứa 1 ô kéo dài toàn bộ -->
+    <TableRow android:layout_weight="3">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#FF0000"
+            android:textColor="#FFFFFF" />
+    </TableRow>
+
+    <!-- Hàng 2: Chia làm 2 cột (cột 1: vàng, cột 2: chứa bảng con) -->
+    <TableRow android:layout_weight="7">
+
+        <!-- Cột 1 - Ô màu vàng -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:gravity="center"
+            android:background="#FFFF00"
+            android:textSize="18sp"
+            />
+
+        <!-- Cột 2 - Chứa TableLayout con -->
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent">
+
+            <TableRow android:layout_weight="3">
+                <TextView
+                    android:layout_width="150pt"
+                    android:layout_height="match_parent"
+                    android:text="3"
+                    android:gravity="center"
+                    android:background="#0000FF"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                     />
+            </TableRow>
+            <TableRow android:layout_weight="2">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="4"
+                    android:gravity="center"
+                    android:background="#FFCCCC"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="5"
+                    android:gravity="center"
+                    android:background="#800080"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </TableRow>
+
+
+
+        </TableLayout>
+
+    </TableRow>
+
+</TableLayout>
