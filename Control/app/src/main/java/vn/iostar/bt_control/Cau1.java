@@ -15,7 +15,9 @@ public class Cau1 extends AppCompatActivity {
             R.drawable.logo,
             R.drawable.pop_1,
             R.drawable.pop_2,
-            R.drawable.pop_3
+            R.drawable.pop_3,
+            R.drawable.top_background1,
+            R.drawable.top_background2
     };
 
     @Override
